@@ -18,7 +18,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    overflow-x: hidden;
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 body{
@@ -46,6 +49,7 @@ body{
     padding: 10px;
     border-radius: 20px;
     max-width: 1280px;
+    margin: 1rem;
 }
 
 .circle{
@@ -60,6 +64,7 @@ body{
 
 h1 {
     font-family: termina demi;
+    font-size: 70px;
 }
 
 .icon {
@@ -72,7 +77,7 @@ h1 {
 }
 
 .btn:hover {
-    border-color: #d93600 !important;
+    border-color: #d93600;
     transition: transform 0.3s ease;
     transform: translateY(-5px);
 }
@@ -82,20 +87,54 @@ h1 {
     box-shadow: none;
 }
 
+#inicio {
+    border-bottom: #FF9659 solid;
+}
+
+#inicio:focus {
+    border-color: white;
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+}
+
 @media (max-width: 768px) {
+
+    
+
+    #pbox {
+        font-size: 20;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 1rem;
+        
+    }
+
+
+
+    #hh1 {
+        font-size: 2rem;
+    }
+
     .col-md-8, .col-md-6 {
       font-size: 1.2rem;
     }
     .navbar-toggler {
       padding: 10px;
     }
+    
+    #hh4 {
+        font-size: 1.4rem;
+        max-width: 400px;
+    }
 
     *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        width: 1000px;
-        
+        width: 430px;
+        max-width: 1280px;
     }
 
     .container2 {
@@ -113,9 +152,11 @@ h1 {
     }
 
     iframe {
-        width: 435px;
-
+        width: 400px;
+        
     }
+
+    
     
 
 }
@@ -125,9 +166,7 @@ h1 {
     .col-md-6 {
       padding: 20px;
     }
-    h1 {
-      font-size: px;
-    }
+
     .col-md-8, .col-md-6 {
         font-size: 1.2rem;
       }
@@ -146,7 +185,8 @@ h1 {
         width: 300px;
         height: 200px;
       }
-  
+
+      
   }
   
 
